@@ -1,0 +1,91 @@
+﻿@page "/quiz"
+@inject QuizService QuizService
+
+@code {
+    private List<Category>? categories;
+    private int currentCategoryIndex = 0;
+    private int currentQuestionIndex = 0;
+    private int? selectedAnswerIndex = null;
+    private List<int> scores = new List<int>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        categories = await QuizService.GetCategoriesAsync();
+    }
+
+    private void SelectAnswer(int index, int points)
+    {
+        selectedAnswerIndex = index;
+        // Add the points for the selected answer
+        if (scores.Count > currentQuestionIndex)
+        {
+            scores[currentQuestionIndex] = points;
+        }
+        else
+        {
+            scores.Add(points);
+        }
+    }
+
+    private async Task NextQuestion()
+    {
+        if (selectedAnswerIndex.HasValue)
+        {
+            // Save the score for the current question
+            var points = categories[currentCategoryIndex].Questions[currentQuestionIndex].Answers[selectedAnswerIndex.Value].Points;
+
+            selectedAnswerIndex = null;
+
+            if (currentQuestionIndex < categories[currentCategoryIndex].Questions.Count - 1)
+            {
+                currentQuestionIndex++;
+            }
+            else if (currentCategoryIndex < categories.Count - 1)
+            {
+                currentCategoryIndex++;
+                currentQuestionIndex = 0;
+            }
+
+            await QuizService.SaveResponsesAsync(scores);
+        }
+    }
+
+    private void PreviousQuestion()
+    {
+        if (currentQuestionIndex > 0)
+        {
+            currentQuestionIndex--;
+        }
+        else if (currentCategoryIndex > 0)
+        {
+            currentCategoryIndex--;
+            currentQuestionIndex = categories[currentCategoryIndex].Questions.Count - 1;
+        }
+    }
+}
+
+<div class="container">
+    <div class="quiz-container">
+        @if (categories != null)
+        {
+            <h3>@categories[currentCategoryIndex].CategoryName</h3>
+            <p>@categories[currentCategoryIndex].Questions[currentQuestionIndex].QuestionText</p>
+
+            <ul class="answers-list">
+                @for (int i = 0; i < categories[currentCategoryIndex].Questions[currentQuestionIndex].Answers.Count; i++)
+                {
+                    var answer = categories[currentCategoryIndex].Questions[currentQuestionIndex].Answers[i];
+                    <li>
+                        <input type="radio" id="@($"answer-{i}")" name="answers" @onclick="() => SelectAnswer(i, answer.Points)" checked="@(selectedAnswerIndex == i)" />
+                        <label for="@($"answer-{i}")">@answer.Text</label>
+                    </li>
+                }
+            </ul>
+
+            <div class="navigation-buttons">
+                <button @onclick="PreviousQuestion" disabled="@(currentCategoryIndex == 0 && currentQuestionIndex == 0)">Previous</button>
+                <button @onclick="NextQuestion">Next</button>
+            </div>
+        }
+    </div>
+</div>

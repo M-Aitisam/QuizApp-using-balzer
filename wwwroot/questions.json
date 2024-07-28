@@ -1,0 +1,433 @@
+[
+  {
+   
+    "CategoryName": "General Knowledge ",
+    "Questions": [
+      {
+        "QuestionText": "What is the capital of France?",
+        "Answers": [
+          {
+            "Text": "Paris",
+            "Points": 1
+          },
+          {
+            "Text": "London",
+            "Points": 0
+          },
+          {
+            "Text": "Berlin",
+            "Points": 0
+          },
+          {
+            "Text": "Madrid",
+            "Points": 0
+          }
+        ]
+      },
+      {
+        "QuestionText": "Who wrote 'To Kill a Mockingbird'?",
+        "Answers": [
+          {
+            "Text": "Harper Lee",
+            "Points": 1
+          },
+          {
+            "Text": "Mark Twain",
+            "Points": 0
+          },
+          {
+            "Text": "J.K. Rowling",
+            "Points": 0
+          },
+          {
+            "Text": "Ernest Hemingway",
+            "Points": 0
+          }
+        ]
+      },
+      {
+        "QuestionText": "What is the largest planet in our solar system?",
+        "Answers": [
+          {
+            "Text": "Jupiter",
+            "Points": 1
+          },
+          {
+            "Text": "Saturn",
+            "Points": 0
+          },
+          {
+            "Text": "Earth",
+            "Points": 0
+          },
+          {
+            "Text": "Mars",
+            "Points": 0
+          }
+        ]
+      },
+      {
+        "QuestionText": "Which element has the chemical symbol 'O'?",
+        "Answers": [
+          {
+            "Text": "Oxygen",
+            "Points": 1
+          },
+          {
+            "Text": "Gold",
+            "Points": 0
+          },
+          {
+            "Text": "Silver",
+            "Points": 0
+          },
+          {
+            "Text": "Iron",
+            "Points": 0
+          }
+        ]
+      },
+      {
+        "QuestionText": "Who was the first President of the United States?",
+        "Answers": [
+          {
+            "Text": "George Washington",
+            "Points": 1
+          },
+          {
+            "Text": "Thomas Jefferson",
+            "Points": 0
+          },
+          {
+            "Text": "Abraham Lincoln",
+            "Points": 0
+          },
+          {
+            "Text": "John Adams",
+            "Points": 0
+          }
+        ]
+      },
+      {
+        "QuestionText": "What is the hardest natural substance on Earth?",
+        "Answers": [
+          {
+            "Text": "Diamond",
+            "Points": 1
+          },
+          {
+            "Text": "Gold",
+            "Points": 0
+          },
+          {
+            "Text": "Silver",
+            "Points": 0
+          },
+          {
+            "Text": "Iron",
+            "Points": 0
+          }
+        ]
+      },
+      {
+        "QuestionText": "What is the smallest country in the world?",
+        "Answers": [
+          {
+            "Text": "Vatican City",
+            "Points": 1
+          },
+          {
+            "Text": "Monaco",
+            "Points": 0
+          },
+          {
+            "Text": "San Marino",
+            "Points": 0
+          },
+          {
+            "Text": "Liechtenstein",
+            "Points": 0
+          }
+        ]
+      },
+      {
+        "QuestionText": "What is the largest ocean on Earth?",
+        "Answers": [
+          {
+            "Text": "Pacific Ocean",
+            "Points": 1
+          },
+          {
+            "Text": "Atlantic Ocean",
+            "Points": 0
+          },
+          {
+            "Text": "Indian Ocean",
+            "Points": 0
+          },
+          {
+            "Text": "Arctic Ocean",
+            "Points": 0
+          }
+        ]
+      },
+      {
+        "QuestionText": "What is the longest river in the world?",
+        "Answers": [
+          {
+            "Text": "Nile",
+            "Points": 1
+          },
+          {
+            "Text": "Amazon",
+            "Points": 0
+          },
+          {
+            "Text": "Yangtze",
+            "Points": 0
+          },
+          {
+            "Text": "Mississippi",
+            "Points": 0
+          }
+        ]
+      },
+      {
+        "QuestionText": "Who painted the Mona Lisa?",
+        "Answers": [
+          {
+            "Text": "Leonardo da Vinci",
+            "Points": 1
+          },
+          {
+            "Text": "Pablo Picasso",
+            "Points": 0
+          },
+          {
+            "Text": "Vincent van Gogh",
+            "Points": 0
+          },
+          {
+            "Text": "Claude Monet",
+            "Points": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "CategoryName": "Science",
+    "Questions": [
+      {
+        "QuestionText": "What is the chemical formula for water?",
+        "Answers": [
+          {
+            "Text": "H2O",
+            "Points": 1
+          },
+          {
+            "Text": "CO2",
+            "Points": 0
+          },
+          {
+            "Text": "O2",
+            "Points": 0
+          },
+          {
+            "Text": "H2",
+            "Points": 0
+          }
+        ]
+      },
+      {
+        "QuestionText": "What planet is known as the Red Planet?",
+        "Answers": [
+          {
+            "Text": "Mars",
+            "Points": 1
+          },
+          {
+            "Text": "Venus",
+            "Points": 0
+          },
+          {
+            "Text": "Jupiter",
+            "Points": 0
+          },
+          {
+            "Text": "Saturn",
+            "Points": 0
+          }
+        ]
+      },
+      {
+        "QuestionText": "What is the speed of light?",
+        "Answers": [
+          {
+            "Text": "299,792,458 meters per second",
+            "Points": 1
+          },
+          {
+            "Text": "150,000,000 meters per second",
+            "Points": 0
+          },
+          {
+            "Text": "1,080,000,000 meters per second",
+            "Points": 0
+          },
+          {
+            "Text": "500,000,000 meters per second",
+            "Points": 0
+          }
+        ]
+      },
+      {
+        "QuestionText": "Who developed the theory of relativity?",
+        "Answers": [
+          {
+            "Text": "Albert Einstein",
+            "Points": 1
+          },
+          {
+            "Text": "Isaac Newton",
+            "Points": 0
+          },
+          {
+            "Text": "Galileo Galilei",
+            "Points": 0
+          },
+          {
+            "Text": "Nikola Tesla",
+            "Points": 0
+          }
+        ]
+      },
+      {
+        "QuestionText": "What is the powerhouse of the cell?",
+        "Answers": [
+          {
+            "Text": "Mitochondria",
+            "Points": 1
+          },
+          {
+            "Text": "Nucleus",
+            "Points": 0
+          },
+          {
+            "Text": "Ribosome",
+            "Points": 0
+          },
+          {
+            "Text": "Endoplasmic Reticulum",
+            "Points": 0
+          }
+        ]
+      },
+      {
+        "QuestionText": "What is the chemical symbol for gold?",
+        "Answers": [
+          {
+            "Text": "Au",
+            "Points": 1
+          },
+          {
+            "Text": "Ag",
+            "Points": 0
+          },
+          {
+            "Text": "Fe",
+            "Points": 0
+          },
+          {
+            "Text": "Pb",
+            "Points": 0
+          }
+        ]
+      },
+      {
+        "QuestionText": "What is the tallest mountain in the world?",
+        "Answers": [
+          {
+            "Text": "Mount Everest",
+            "Points": 1
+          },
+          {
+            "Text": "K2",
+            "Points": 0
+          },
+          {
+            "Text": "Kangchenjunga",
+            "Points": 0
+          },
+          {
+            "Text": "Lhotse",
+            "Points": 0
+          }
+        ]
+      },
+      {
+        "QuestionText": "What is the main gas found in the air we breathe?",
+        "Answers": [
+          {
+            "Text": "Nitrogen",
+            "Points": 1
+          },
+          {
+            "Text": "Oxygen",
+            "Points": 0
+          },
+          {
+            "Text": "Carbon Dioxide",
+            "Points": 0
+          },
+          {
+            "Text": "Hydrogen",
+            "Points": 0
+          }
+        ]
+      },
+      {
+        "QuestionText": "What is the hardest natural substance?",
+        "Answers": [
+          {
+            "Text": "Diamond",
+            "Points": 1
+          },
+          {
+            "Text": "Gold",
+            "Points": 0
+          },
+          {
+            "Text": "Silver",
+            "Points": 0
+          },
+          {
+            "Text": "Iron",
+            "Points": 0
+          }
+        ]
+      },
+      {
+        "QuestionText": "What is the study of plants called?",
+        "Answers": [
+          {
+            "Text": "Botany",
+            "Points": 1
+          },
+          {
+            "Text": "Zoology",
+            "Points": 0
+          },
+          {
+            "Text": "Microbiology",
+            "Points": 0
+          },
+          {
+            "Text": "Ecology",
+            "Points": 0
+          }
+        ]
+      }
+    ]
+  }
+]
