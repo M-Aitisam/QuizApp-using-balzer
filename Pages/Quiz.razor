@@ -11,29 +11,34 @@
     protected override async Task OnInitializedAsync()
     {
         categories = await QuizService.GetCategoriesAsync();
+        InitializeScores();
+    }
+
+    private void InitializeScores()
+    {
+        if (categories != null)
+        {
+            foreach (var category in categories)
+            {
+                foreach (var question in category.Questions)
+                {
+                    scores.Add(0); // Initialize scores with 0 for each question
+                }
+            }
+        }
     }
 
     private void SelectAnswer(int index, int points)
     {
         selectedAnswerIndex = index;
-        // Add the points for the selected answer
-        if (scores.Count > currentQuestionIndex)
-        {
-            scores[currentQuestionIndex] = points;
-        }
-        else
-        {
-            scores.Add(points);
-        }
+        int globalQuestionIndex = GetGlobalQuestionIndex(currentCategoryIndex, currentQuestionIndex);
+        scores[globalQuestionIndex] = points;
     }
 
     private async Task NextQuestion()
     {
         if (selectedAnswerIndex.HasValue)
         {
-            // Save the score for the current question
-            var points = categories[currentCategoryIndex].Questions[currentQuestionIndex].Answers[selectedAnswerIndex.Value].Points;
-
             selectedAnswerIndex = null;
 
             if (currentQuestionIndex < categories[currentCategoryIndex].Questions.Count - 1)
@@ -44,6 +49,11 @@
             {
                 currentCategoryIndex++;
                 currentQuestionIndex = 0;
+            }
+            else
+            {
+                // Handle end of quiz if needed
+                return;
             }
 
             await QuizService.SaveResponsesAsync(scores);
@@ -61,6 +71,16 @@
             currentCategoryIndex--;
             currentQuestionIndex = categories[currentCategoryIndex].Questions.Count - 1;
         }
+    }
+
+    private int GetGlobalQuestionIndex(int categoryIndex, int questionIndex)
+    {
+        int globalIndex = 0;
+        for (int i = 0; i < categoryIndex; i++)
+        {
+            globalIndex += categories[i].Questions.Count;
+        }
+        return globalIndex + questionIndex;
     }
 }
 
@@ -89,3 +109,49 @@
         }
     </div>
 </div>
+
+<style>
+    .answers-list {
+        list-style-type: none;
+        padding: 0;
+    }
+
+        .answers-list li {
+            margin: 10px 0;
+        }
+
+    input[type="radio"] {
+        display: none;
+    }
+
+        input[type="radio"] + label {
+            position: relative;
+            padding-left: 25px;
+            cursor: pointer;
+            user-select: none;
+        }
+
+            input[type="radio"] + label:before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 18px;
+                height: 18px;
+                border: 2px solid #000;
+                border-radius: 50%;
+                background: #fff;
+            }
+
+        input[type="radio"]:checked + label:after {
+            content: "";
+            position: absolute;
+            left:1px;
+             top: 5px; 
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            border: 2px solid black;
+            /* background: yellow; */
+        }
+</style>
