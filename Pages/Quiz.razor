@@ -128,12 +128,12 @@
             {
                 <div class="category-score">
                     <h4>Category Score: @categoryScore</h4>
-                    <button @onclick="() => showCategoryScore = false">Next Category</button>
+                    <button class="btn btn-outline-success" @onclick="() => showCategoryScore = false">Next Category</button>
                 </div>
             }
             else
             {
-                <h2 class="head">Test Application</h2>
+                <h2 class="head">Quiz App</h2>
                 
                 <hr />
                 <h3 class="name"> @categories[currentCategoryIndex].CategoryName</h3>

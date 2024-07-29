@@ -178,15 +178,27 @@ input[type="radio"] {
     font-weight: bold;
 }
 .name {
-    
     align-items: center;
-    padding-left:10%;
-    font-weight:bold;
-    font-size:1.5vw;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;    
+    font-weight: bold;
+    font-size: 1.5vw;
 }
 .head {
+     align-items: center;
      font-weight: bolder;
+   display:flex;
+    justify-content:center;
     color: #0B5ED7;
     -webkit-text-stroke: 1.2px;
 font-family: rej;
+}
+
+.navigation-buttons{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+    
 }
