@@ -135,7 +135,8 @@
             {
                 <h2 class="head">Test Application</h2>
                 
-                <h3 class="name">@categories[currentCategoryIndex].CategoryName</h3>
+                <hr />
+                <h3 class="name"> @categories[currentCategoryIndex].CategoryName</h3>
 
                 <hr />
                 <p class="para">Question @categories[currentCategoryIndex].Questions[currentQuestionIndex].QuestionNumber</p>
@@ -153,7 +154,7 @@
                 </ul>
 
                 <div class="navigation-buttons">
-                    <button class="btn btn-success" @onclick="PreviousQuestion"
+                    <button class="btn btn-danger" @onclick="PreviousQuestion"
                             disabled="@(currentCategoryIndex == 0 && currentQuestionIndex == 0)">
                         Previous
                     </button>

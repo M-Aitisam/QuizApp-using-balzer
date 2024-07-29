@@ -1,7 +1,14 @@
 @import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
 
+
+
+@font-face {
+    font-family: rej;
+    src: url('../css/Rejouice-Headline (1).ttf');
+}
+
 html, body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: rej;
 }
 
 h1:focus {
@@ -73,7 +80,7 @@ a, .btn-link {
         display:flex;
         justify-content: center;
         align-items: center;
-        margin-top:10%;
+        margin-top:5%;
     } 
     
     .quiz-container {
@@ -178,5 +185,8 @@ input[type="radio"] {
     font-size:1.5vw;
 }
 .head {
-
+     font-weight: bolder;
+    color: #0B5ED7;
+    -webkit-text-stroke: 1.2px;
+font-family: rej;
 }

@@ -6,13 +6,14 @@
         "QuestionNumber": 1,
         "QuestionText": "What is the capital of France?",
         "Answers": [
-          {
-            "Text": "Paris",
-            "Points": 1
-          },
+
           {
             "Text": "London",
             "Points": 0
+          },
+          {
+            "Text": "Paris",
+            "Points": 3
           },
           {
             "Text": "Berlin",
@@ -28,10 +29,7 @@
         "QuestionNumber": 2,
         "QuestionText": "Who wrote 'To Kill a Mockingbird'?",
         "Answers": [
-          {
-            "Text": "Harper Lee",
-            "Points": 2
-          },
+
           {
             "Text": "Mark Twain",
             "Points": 0
@@ -39,6 +37,10 @@
           {
             "Text": "J.K. Rowling",
             "Points": 0
+          },
+          {
+            "Text": "Harper Lee",
+            "Points": 2
           },
           {
             "Text": "Ernest Hemingway",
@@ -50,10 +52,7 @@
         "QuestionNumber": 3,
         "QuestionText": "What is the largest planet in our solar system?",
         "Answers": [
-          {
-            "Text": "Jupiter",
-            "Points": 1
-          },
+
           {
             "Text": "Saturn",
             "Points": 0
@@ -61,6 +60,10 @@
           {
             "Text": "Earth",
             "Points": 0
+          },
+          {
+            "Text": "Jupiter",
+            "Points": 5
           },
           {
             "Text": "Mars",
@@ -72,10 +75,7 @@
         "QuestionNumber": 4,
         "QuestionText": "Which element has the chemical symbol 'O'?",
         "Answers": [
-          {
-            "Text": "Oxygen",
-            "Points": 1
-          },
+
           {
             "Text": "Gold",
             "Points": 0
@@ -83,6 +83,10 @@
           {
             "Text": "Silver",
             "Points": 0
+          },
+          {
+            "Text": "Oxygen",
+            "Points": 2
           },
           {
             "Text": "Iron",
@@ -94,10 +98,7 @@
         "QuestionNumber": 5,
         "QuestionText": "Who was the first President of the United States?",
         "Answers": [
-          {
-            "Text": "George Washington",
-            "Points": 1
-          },
+
           {
             "Text": "Thomas Jefferson",
             "Points": 0
@@ -105,6 +106,10 @@
           {
             "Text": "Abraham Lincoln",
             "Points": 0
+          },
+          {
+            "Text": "George Washington",
+            "Points": 4
           },
           {
             "Text": "John Adams",
@@ -116,10 +121,7 @@
         "QuestionNumber": 6,
         "QuestionText": "What is the hardest natural substance on Earth?",
         "Answers": [
-          {
-            "Text": "Diamond",
-            "Points": 1
-          },
+
           {
             "Text": "Gold",
             "Points": 0
@@ -127,6 +129,10 @@
           {
             "Text": "Silver",
             "Points": 0
+          },
+          {
+            "Text": "Diamond",
+            "Points": 2
           },
           {
             "Text": "Iron",
@@ -139,12 +145,12 @@
         "QuestionText": "What is the smallest country in the world?",
         "Answers": [
           {
-            "Text": "Vatican City",
-            "Points": 1
-          },
-          {
             "Text": "Monaco",
             "Points": 0
+          },
+          {
+            "Text": "Vatican City",
+            "Points": 2
           },
           {
             "Text": "San Marino",
@@ -162,7 +168,7 @@
         "Answers": [
           {
             "Text": "Pacific Ocean",
-            "Points": 1
+            "Points": 2
           },
           {
             "Text": "Atlantic Ocean",
@@ -183,12 +189,12 @@
         "QuestionText": "What is the longest river in the world?",
         "Answers": [
           {
-            "Text": "Nile",
-            "Points": 1
-          },
-          {
             "Text": "Amazon",
             "Points": 0
+          },
+          {
+            "Text": "Nile",
+            "Points": 3
           },
           {
             "Text": "Yangtze",
@@ -254,12 +260,12 @@
         "QuestionText": "What planet is known as the Red Planet?",
         "Answers": [
           {
-            "Text": "Mars",
-            "Points": 1
-          },
-          {
             "Text": "Venus",
             "Points": 0
+          },
+          {
+            "Text": "Mars",
+            "Points": 1
           },
           {
             "Text": "Jupiter",
@@ -298,12 +304,12 @@
         "QuestionText": "Who developed the theory of relativity?",
         "Answers": [
           {
-            "Text": "Albert Einstein",
-            "Points": 1
-          },
-          {
             "Text": "Isaac Newton",
             "Points": 0
+          },
+          {
+            "Text": "Albert Einstein",
+            "Points": 3
           },
           {
             "Text": "Galileo Galilei",
@@ -321,7 +327,7 @@
         "Answers": [
           {
             "Text": "Mitochondria",
-            "Points": 1
+            "Points": 4
           },
           {
             "Text": "Nucleus",
@@ -343,7 +349,7 @@
         "Answers": [
           {
             "Text": "Au",
-            "Points": 1
+            "Points": 2
           },
           {
             "Text": "Ag",
@@ -364,12 +370,12 @@
         "QuestionText": "What is the tallest mountain in the world?",
         "Answers": [
           {
-            "Text": "Mount Everest",
-            "Points": 1
-          },
-          {
             "Text": "K2",
             "Points": 0
+          },
+          {
+            "Text": "Mount Everest",
+            "Points": 2
           },
           {
             "Text": "Kangchenjunga",
@@ -386,12 +392,12 @@
         "QuestionText": "What is the main gas found in the air we breathe?",
         "Answers": [
           {
-            "Text": "Nitrogen",
-            "Points": 1
-          },
-          {
             "Text": "Oxygen",
             "Points": 0
+          },
+          {
+            "Text": "Nitrogen",
+            "Points": 3
           },
           {
             "Text": "Carbon Dioxide",
@@ -901,7 +907,459 @@
         ]
       }
     ]
+  },
+  {
+    "CategoryName": "PakStudy",
+    "Questions": [
+      {
+        "QuestionNumber": 1,
+        "QuestionText": "Who was the founder of Pakistan?",
+        "Answers": [
+          {
+            "Text": "Allama Iqbal",
+            "Points": 0
+          },
+          {
+            "Text": "Muhammad Ali Jinnah",
+            "Points": 1
+          },
+          {
+            "Text": "Liaquat Ali Khan",
+            "Points": 0
+          },
+          {
+            "Text": "Zulfikar Ali Bhutto",
+            "Points": 0
+          }
+        ]
+      },
+      {
+        "QuestionNumber": 2,
+        "QuestionText": "In which year did Pakistan become an independent country?",
+        "Answers": [
+          {
+            "Text": "1945",
+            "Points": 0
+          },
+          {
+            "Text": "1946",
+            "Points": 0
+          },
+          {
+            "Text": "1947",
+            "Points": 1
+          },
+          {
+            "Text": "1948",
+            "Points": 0
+          }
+        ]
+      },
+      {
+        "QuestionNumber": 3,
+        "QuestionText": "What is the national language of Pakistan?",
+        "Answers": [
+          {
+            "Text": "English",
+            "Points": 0
+          },
+          {
+            "Text": "Urdu",
+            "Points": 1
+          },
+          {
+            "Text": "Punjabi",
+            "Points": 0
+          },
+          {
+            "Text": "Sindhi",
+            "Points": 0
+          }
+        ]
+      },
+      {
+        "QuestionNumber": 4,
+        "QuestionText": "Which city is known as the cultural capital of Pakistan?",
+        "Answers": [
+          {
+            "Text": "Lahore",
+            "Points": 1
+          },
+          {
+            "Text": "Karachi",
+            "Points": 0
+          },
+          {
+            "Text": "Islamabad",
+            "Points": 0
+          },
+          {
+            "Text": "Rawalpindi",
+            "Points": 0
+          }
+        ]
+      },
+      {
+        "QuestionNumber": 5,
+        "QuestionText": "What is the official currency of Pakistan?",
+        "Answers": [
+          {
+            "Text": "Dollar",
+            "Points": 0
+          },
+          {
+            "Text": "Euro",
+            "Points": 0
+          },
+          {
+            "Text": "Pakistani Rupee",
+            "Points": 1
+          },
+          {
+            "Text": "Pound",
+            "Points": 0
+          }
+        ]
+      },
+      {
+        "QuestionNumber": 6,
+        "QuestionText": "Who was the first President of Pakistan?",
+        "Answers": [
+          {
+            "Text": "Iskander Mirza",
+            "Points": 1
+          },
+          {
+            "Text": "Ayub Khan",
+            "Points": 0
+          },
+          {
+            "Text": "Zia-ul-Haq",
+            "Points": 0
+          },
+          {
+            "Text": "Pervez Musharraf",
+            "Points": 0
+          }
+        ]
+      },
+      {
+        "QuestionNumber": 7,
+        "QuestionText": "What is the name of Pakistan's national flag?",
+        "Answers": [
+          {
+            "Text": "Star and Crescent",
+            "Points": 1
+          },
+          {
+            "Text": "Tricolor",
+            "Points": 0
+          },
+          {
+            "Text": "Union Jack",
+            "Points": 0
+          },
+          {
+            "Text": "Red Crescent",
+            "Points": 0
+          }
+        ]
+      },
+      {
+        "QuestionNumber": 8,
+        "QuestionText": "What is the highest peak in Pakistan?",
+        "Answers": [
+          {
+            "Text": "K2",
+            "Points": 1
+          },
+          {
+            "Text": "Nanga Parbat",
+            "Points": 0
+          },
+          {
+            "Text": "Kangchenjunga",
+            "Points": 0
+          },
+          {
+            "Text": "Mount Everest",
+            "Points": 0
+          }
+        ]
+      },
+      {
+        "QuestionNumber": 9,
+        "QuestionText": "Which river is known as the lifeline of Pakistan?",
+        "Answers": [
+          {
+            "Text": "Indus River",
+            "Points": 1
+          },
+          {
+            "Text": "Ganges River",
+            "Points": 0
+          },
+          {
+            "Text": "Yamuna River",
+            "Points": 0
+          },
+          {
+            "Text": "Brahmaputra River",
+            "Points": 0
+          }
+        ]
+      },
+      {
+        "QuestionNumber": 10,
+        "QuestionText": "Which province is the largest by area in Pakistan?",
+        "Answers": [
+          {
+            "Text": "Punjab",
+            "Points": 0
+          },
+          {
+            "Text": "Sindh",
+            "Points": 0
+          },
+          {
+            "Text": "Khyber Pakhtunkhwa",
+            "Points": 0
+          },
+          {
+            "Text": "Balochistan",
+            "Points": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "CategoryName": "Urdu",
+    "Questions": [
+      {
+        "QuestionNumber": 1,
+        "QuestionText": "Who is known as the poet of the East?",
+        "Answers": [
+          {
+            "Text": "Faiz Ahmed Faiz",
+            "Points": 0
+          },
+          {
+            "Text": "Mirza Ghalib",
+            "Points": 0
+          },
+          {
+            "Text": "Allama Iqbal",
+            "Points": 1
+          },
+          {
+            "Text": "Ahmed Nadeem Qasmi",
+            "Points": 0
+          }
+        ]
+      },
+      {
+        "QuestionNumber": 2,
+        "QuestionText": "Which of the following is a famous Urdu novel?",
+        "Answers": [
+          {
+            "Text": "The Great Gatsby",
+            "Points": 0
+          },
+          {
+            "Text": "Pride and Prejudice",
+            "Points": 0
+          },
+          {
+            "Text": "Umrao Jaan Ada",
+            "Points": 1
+          },
+          {
+            "Text": "To Kill a Mockingbird",
+            "Points": 0
+          }
+        ]
+      },
+      {
+        "QuestionNumber": 3,
+        "QuestionText": "What is the term for Urdu poetry written in praise of the Prophet Muhammad?",
+        "Answers": [
+          {
+            "Text": "Ghazal",
+            "Points": 0
+          },
+          {
+            "Text": "Nazm",
+            "Points": 0
+          },
+          {
+            "Text": "Naat",
+            "Points": 1
+          },
+          {
+            "Text": "Qasida",
+            "Points": 0
+          }
+        ]
+      },
+      {
+        "QuestionNumber": 4,
+        "QuestionText": "Who wrote the famous Urdu book 'Chandrakanta'?",
+        "Answers": [
+          {
+            "Text": "Ismat Chughtai",
+            "Points": 0
+          },
+          {
+            "Text": "Ratan Nath Sarshar",
+            "Points": 1
+          },
+          {
+            "Text": "Manto",
+            "Points": 0
+          },
+          {
+            "Text": "Premchand",
+            "Points": 0
+          }
+        ]
+      },
+      {
+        "QuestionNumber": 5,
+        "QuestionText": "Which poet is known for his 'Kulliyat-e-Hafiz'?",
+        "Answers": [
+          {
+            "Text": "Faiz Ahmed Faiz",
+            "Points": 0
+          },
+          {
+            "Text": "Mirza Ghalib",
+            "Points": 0
+          },
+          {
+            "Text": "Hafiz",
+            "Points": 1
+          },
+          {
+            "Text": "Ahmad Faraz",
+            "Points": 0
+          }
+        ]
+      },
+      {
+        "QuestionNumber": 6,
+        "QuestionText": "Which famous Urdu novel is set during the Partition of India?",
+        "Answers": [
+          {
+            "Text": "Aangan",
+            "Points": 1
+          },
+          {
+            "Text": "Raja Gidh",
+            "Points": 0
+          },
+          {
+            "Text": "Mitti Ki Khushboo",
+            "Points": 0
+          },
+          {
+            "Text": "Khayal",
+            "Points": 0
+          }
+        ]
+      },
+      {
+        "QuestionNumber": 7,
+        "QuestionText": "What is the term for a collection of Urdu short stories?",
+        "Answers": [
+          {
+            "Text": "Nazm",
+            "Points": 0
+          },
+          {
+            "Text": "Afsanay",
+            "Points": 1
+          },
+          {
+            "Text": "Ghazal",
+            "Points": 0
+          },
+          {
+            "Text": "Rubaai",
+            "Points": 0
+          }
+        ]
+      },
+      {
+        "QuestionNumber": 8,
+        "QuestionText": "Which literary award is given for excellence in Urdu literature?",
+        "Answers": [
+          {
+            "Text": "Nobel Prize",
+            "Points": 0
+          },
+          {
+            "Text": "Jnanpith Award",
+            "Points": 0
+          },
+          {
+            "Text": "Sitara-e-Imtiaz",
+            "Points": 1
+          },
+          {
+            "Text": "Pulitzer Prize",
+            "Points": 0
+          }
+        ]
+      },
+      {
+        "QuestionNumber": 9,
+        "QuestionText": "Who wrote the famous Urdu drama 'Toba Tek Singh'?",
+        "Answers": [
+          {
+            "Text": "Saadat Hasan Manto",
+            "Points": 1
+          },
+          {
+            "Text": "Ismat Chughtai",
+            "Points": 0
+          },
+          {
+            "Text": "Ahmad Nadeem Qasmi",
+            "Points": 0
+          },
+          {
+            "Text": "Premchand",
+            "Points": 0
+          }
+        ]
+      },
+      {
+        "QuestionNumber": 10,
+        "QuestionText": "Which genre of Urdu poetry is characterized by its melancholic tone?",
+        "Answers": [
+          {
+            "Text": "Ghazal",
+            "Points": 1
+          },
+          {
+            "Text": "Nazm",
+            "Points": 0
+          },
+          {
+            "Text": "Qasida",
+            "Points": 0
+          },
+          {
+            "Text": "Naat",
+            "Points": 0
+          }
+        ]
+      }
+    ]
   }
+
+
 
 
 ]
