@@ -1,9 +1,9 @@
 [
   {
-   
-    "CategoryName": "General Knowledge ",
+    "CategoryName": "General Knowledge",
     "Questions": [
       {
+        "QuestionNumber": 1,
         "QuestionText": "What is the capital of France?",
         "Answers": [
           {
@@ -25,11 +25,12 @@
         ]
       },
       {
+        "QuestionNumber": 2,
         "QuestionText": "Who wrote 'To Kill a Mockingbird'?",
         "Answers": [
           {
             "Text": "Harper Lee",
-            "Points": 1
+            "Points": 2
           },
           {
             "Text": "Mark Twain",
@@ -46,6 +47,7 @@
         ]
       },
       {
+        "QuestionNumber": 3,
         "QuestionText": "What is the largest planet in our solar system?",
         "Answers": [
           {
@@ -67,6 +69,7 @@
         ]
       },
       {
+        "QuestionNumber": 4,
         "QuestionText": "Which element has the chemical symbol 'O'?",
         "Answers": [
           {
@@ -88,6 +91,7 @@
         ]
       },
       {
+        "QuestionNumber": 5,
         "QuestionText": "Who was the first President of the United States?",
         "Answers": [
           {
@@ -109,6 +113,7 @@
         ]
       },
       {
+        "QuestionNumber": 6,
         "QuestionText": "What is the hardest natural substance on Earth?",
         "Answers": [
           {
@@ -130,6 +135,7 @@
         ]
       },
       {
+        "QuestionNumber": 7,
         "QuestionText": "What is the smallest country in the world?",
         "Answers": [
           {
@@ -151,6 +157,7 @@
         ]
       },
       {
+        "QuestionNumber": 8,
         "QuestionText": "What is the largest ocean on Earth?",
         "Answers": [
           {
@@ -172,6 +179,7 @@
         ]
       },
       {
+        "QuestionNumber": 9,
         "QuestionText": "What is the longest river in the world?",
         "Answers": [
           {
@@ -193,6 +201,7 @@
         ]
       },
       {
+        "QuestionNumber": 10,
         "QuestionText": "Who painted the Mona Lisa?",
         "Answers": [
           {
@@ -219,6 +228,7 @@
     "CategoryName": "Science",
     "Questions": [
       {
+        "QuestionNumber": 1,
         "QuestionText": "What is the chemical formula for water?",
         "Answers": [
           {
@@ -240,6 +250,7 @@
         ]
       },
       {
+        "QuestionNumber": 2,
         "QuestionText": "What planet is known as the Red Planet?",
         "Answers": [
           {
@@ -261,6 +272,7 @@
         ]
       },
       {
+        "QuestionNumber": 3,
         "QuestionText": "What is the speed of light?",
         "Answers": [
           {
@@ -282,6 +294,7 @@
         ]
       },
       {
+        "QuestionNumber": 4,
         "QuestionText": "Who developed the theory of relativity?",
         "Answers": [
           {
@@ -303,6 +316,7 @@
         ]
       },
       {
+        "QuestionNumber": 5,
         "QuestionText": "What is the powerhouse of the cell?",
         "Answers": [
           {
@@ -324,6 +338,7 @@
         ]
       },
       {
+        "QuestionNumber": 6,
         "QuestionText": "What is the chemical symbol for gold?",
         "Answers": [
           {
@@ -345,6 +360,7 @@
         ]
       },
       {
+        "QuestionNumber": 7,
         "QuestionText": "What is the tallest mountain in the world?",
         "Answers": [
           {
@@ -366,6 +382,7 @@
         ]
       },
       {
+        "QuestionNumber": 8,
         "QuestionText": "What is the main gas found in the air we breathe?",
         "Answers": [
           {
@@ -387,6 +404,7 @@
         ]
       },
       {
+        "QuestionNumber": 9,
         "QuestionText": "What is the hardest natural substance?",
         "Answers": [
           {
@@ -408,6 +426,7 @@
         ]
       },
       {
+        "QuestionNumber": 10,
         "QuestionText": "What is the study of plants called?",
         "Answers": [
           {
@@ -428,6 +447,461 @@
           }
         ]
       }
+
+    ]
+  },
+
+  {
+    "CategoryName": "Math",
+    "Questions": [
+      {
+        "QuestionNumber": 1,
+        "QuestionText": "What is 2 + 2?",
+        "Answers": [
+          {
+            "Text": "3",
+            "Points": 0
+          },
+          {
+            "Text": "4",
+            "Points": 1
+          },
+          {
+            "Text": "5",
+            "Points": 0
+          },
+          {
+            "Text": "6",
+            "Points": 0
+          }
+        ]
+      },
+      {
+        "QuestionNumber": 2,
+        "QuestionText": "What is 5 * 6?",
+        "Answers": [
+          {
+            "Text": "30",
+            "Points": 1
+          },
+          {
+            "Text": "25",
+            "Points": 0
+          },
+          {
+            "Text": "35",
+            "Points": 0
+          },
+          {
+            "Text": "40",
+            "Points": 0
+          }
+        ]
+      },
+      {
+        "QuestionNumber": 3,
+        "QuestionText": "What is the square root of 81?",
+        "Answers": [
+          {
+            "Text": "7",
+            "Points": 0
+          },
+          {
+            "Text": "8",
+            "Points": 0
+          },
+          {
+            "Text": "9",
+            "Points": 1
+          },
+          {
+            "Text": "10",
+            "Points": 0
+          }
+        ]
+      },
+      {
+        "QuestionNumber": 4,
+        "QuestionText": "What is 12 / 4?",
+        "Answers": [
+          {
+            "Text": "2",
+            "Points": 0
+          },
+          {
+            "Text": "3",
+            "Points": 1
+          },
+          {
+            "Text": "4",
+            "Points": 0
+          },
+          {
+            "Text": "5",
+            "Points": 0
+          }
+        ]
+      },
+      {
+        "QuestionNumber": 5,
+        "QuestionText": "What is 7 - 3?",
+        "Answers": [
+          {
+            "Text": "4",
+            "Points": 1
+          },
+          {
+            "Text": "5",
+            "Points": 0
+          },
+          {
+            "Text": "6",
+            "Points": 0
+          },
+          {
+            "Text": "7",
+            "Points": 0
+          }
+        ]
+      },
+      {
+        "QuestionNumber": 6,
+        "QuestionText": "What is the area of a square with side length 5?",
+        "Answers": [
+          {
+            "Text": "25",
+            "Points": 1
+          },
+          {
+            "Text": "20",
+            "Points": 0
+          },
+          {
+            "Text": "15",
+            "Points": 0
+          },
+          {
+            "Text": "10",
+            "Points": 0
+          }
+        ]
+      },
+      {
+        "QuestionNumber": 7,
+        "QuestionText": "What is 3^3?",
+        "Answers": [
+          {
+            "Text": "6",
+            "Points": 0
+          },
+          {
+            "Text": "9",
+            "Points": 0
+          },
+          {
+            "Text": "27",
+            "Points": 1
+          },
+          {
+            "Text": "30",
+            "Points": 0
+          }
+        ]
+      },
+      {
+        "QuestionNumber": 8,
+        "QuestionText": "What is 8 * 7?",
+        "Answers": [
+          {
+            "Text": "54",
+            "Points": 0
+          },
+          {
+            "Text": "56",
+            "Points": 1
+          },
+          {
+            "Text": "60",
+            "Points": 0
+          },
+          {
+            "Text": "64",
+            "Points": 0
+          }
+        ]
+      },
+      {
+        "QuestionNumber": 9,
+        "QuestionText": "What is the perimeter of a rectangle with length 4 and width 3?",
+        "Answers": [
+          {
+            "Text": "14",
+            "Points": 1
+          },
+          {
+            "Text": "16",
+            "Points": 0
+          },
+          {
+            "Text": "12",
+            "Points": 0
+          },
+          {
+            "Text": "10",
+            "Points": 0
+          }
+        ]
+      },
+      {
+        "QuestionNumber": 10,
+        "QuestionText": "What is the value of π (Pi) approximately?",
+        "Answers": [
+          {
+            "Text": "3.14",
+            "Points": 1
+          },
+          {
+            "Text": "3.00",
+            "Points": 0
+          },
+          {
+            "Text": "3.50",
+            "Points": 0
+          },
+          {
+            "Text": "3.60",
+            "Points": 0
+          }
+        ]
+      }
+    ]
+  },
+
+  {
+    "CategoryName": "Biology",
+    "Questions": [
+      {
+        "QuestionNumber": 1,
+        "QuestionText": "What is the basic unit of life?",
+        "Answers": [
+          {
+            "Text": "Cell",
+            "Points": 1
+          },
+          {
+            "Text": "Tissue",
+            "Points": 0
+          },
+          {
+            "Text": "Organ",
+            "Points": 0
+          },
+          {
+            "Text": "Organism",
+            "Points": 0
+          }
+        ]
+      },
+      {
+        "QuestionNumber": 2,
+        "QuestionText": "What is the process by which plants make their food?",
+        "Answers": [
+          {
+            "Text": "Photosynthesis",
+            "Points": 1
+          },
+          {
+            "Text": "Respiration",
+            "Points": 0
+          },
+          {
+            "Text": "Digestion",
+            "Points": 0
+          },
+          {
+            "Text": "Transpiration",
+            "Points": 0
+          }
+        ]
+      },
+      {
+        "QuestionNumber": 3,
+        "QuestionText": "What is the powerhouse of the cell?",
+        "Answers": [
+          {
+            "Text": "Nucleus",
+            "Points": 0
+          },
+          {
+            "Text": "Mitochondria",
+            "Points": 1
+          },
+          {
+            "Text": "Ribosome",
+            "Points": 0
+          },
+          {
+            "Text": "Endoplasmic Reticulum",
+            "Points": 0
+          }
+        ]
+      },
+      {
+        "QuestionNumber": 4,
+        "QuestionText": "Which organ is responsible for pumping blood throughout the body?",
+        "Answers": [
+          {
+            "Text": "Liver",
+            "Points": 0
+          },
+          {
+            "Text": "Lungs",
+            "Points": 0
+          },
+          {
+            "Text": "Heart",
+            "Points": 1
+          },
+          {
+            "Text": "Kidney",
+            "Points": 0
+          }
+        ]
+      },
+      {
+        "QuestionNumber": 5,
+        "QuestionText": "What is the genetic material in organisms?",
+        "Answers": [
+          {
+            "Text": "DNA",
+            "Points": 1
+          },
+          {
+            "Text": "RNA",
+            "Points": 0
+          },
+          {
+            "Text": "Protein",
+            "Points": 0
+          },
+          {
+            "Text": "Carbohydrate",
+            "Points": 0
+          }
+        ]
+      },
+      {
+        "QuestionNumber": 6,
+        "QuestionText": "What type of cell division results in four daughter cells with half the number of chromosomes as the parent cell?",
+        "Answers": [
+          {
+            "Text": "Mitosis",
+            "Points": 0
+          },
+          {
+            "Text": "Meiosis",
+            "Points": 1
+          },
+          {
+            "Text": "Binary Fission",
+            "Points": 0
+          },
+          {
+            "Text": "Cytokinesis",
+            "Points": 0
+          }
+        ]
+      },
+      {
+        "QuestionNumber": 7,
+        "QuestionText": "What is the role of enzymes in biological reactions?",
+        "Answers": [
+          {
+            "Text": "To increase the activation energy",
+            "Points": 0
+          },
+          {
+            "Text": "To decrease the activation energy",
+            "Points": 1
+          },
+          {
+            "Text": "To serve as a reactant",
+            "Points": 0
+          },
+          {
+            "Text": "To act as a product",
+            "Points": 0
+          }
+        ]
+      },
+      {
+        "QuestionNumber": 8,
+        "QuestionText": "Which of the following is an example of a prokaryotic cell?",
+        "Answers": [
+          {
+            "Text": "Animal Cell",
+            "Points": 0
+          },
+          {
+            "Text": "Plant Cell",
+            "Points": 0
+          },
+          {
+            "Text": "Bacterial Cell",
+            "Points": 1
+          },
+          {
+            "Text": "Fungal Cell",
+            "Points": 0
+          }
+        ]
+      },
+      {
+        "QuestionNumber": 9,
+        "QuestionText": "What is the primary function of the respiratory system?",
+        "Answers": [
+          {
+            "Text": "To circulate blood",
+            "Points": 0
+          },
+          {
+            "Text": "To digest food",
+            "Points": 0
+          },
+          {
+            "Text": "To exchange gases",
+            "Points": 1
+          },
+          {
+            "Text": "To produce hormones",
+            "Points": 0
+          }
+        ]
+      },
+      {
+        "QuestionNumber": 10,
+        "QuestionText": "What is the study of heredity and the variation of inherited characteristics called?",
+        "Answers": [
+          {
+            "Text": "Genetics",
+            "Points": 1
+          },
+          {
+            "Text": "Evolution",
+            "Points": 0
+          },
+          {
+            "Text": "Ecology",
+            "Points": 0
+          },
+          {
+            "Text": "Physiology",
+            "Points": 0
+          }
+        ]
+      }
     ]
   }
+
+
 ]

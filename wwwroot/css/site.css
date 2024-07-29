@@ -93,30 +93,8 @@ a, .btn-link {
             margin-bottom: 10px;
         }
 
-    input[type="radio"] {
-        display: none;
-    }
+    
 
-        input[type="radio"] + label {
-            position: relative;
-            padding-left: 25px;
-            cursor: pointer;
-            display: inline-block;
-        }
-
-            input[type="radio"] + label:before {
-                display:none;
-                content: "";
-                position: absolute;
-                left: 0;
-                top: 50%;
-                transform: translateY(-50%);
-                width: 14px;
-                height: 14px;
-            
-                border-radius: 50%;
-                background: #fff;
-            }
 
         input[type="radio"]:checked + label:before {
          
@@ -136,4 +114,69 @@ a, .btn-link {
         text-decoration:none;
     }
 
+.answers-list {
+    list-style-type: none;
+    padding: 0;
+}
 
+.answers-list li {
+    margin: 10px 0;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+    input[type="radio"] + label {
+        position: relative;
+        padding-left: 25px;
+        cursor: pointer;
+        user-select: none;
+    }
+
+        input[type="radio"] + label:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 18px;
+            height: 18px;
+            border: 2px solid #000;
+            border-radius: 50%;
+            background: white;
+        }
+
+    input[type="radio"]:checked + label:after {
+        content: "";
+        position: absolute;
+        left: 5px;
+        top: 5px;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #000;
+    }
+
+.navigation-buttons {
+    margin-top: 20px;
+}
+
+.total-score {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.para{
+    font-weight: bold;
+}
+.name {
+    
+    align-items: center;
+    padding-left:10%;
+    font-weight:bold;
+    font-size:1.5vw;
+}
+.head {
+
+}

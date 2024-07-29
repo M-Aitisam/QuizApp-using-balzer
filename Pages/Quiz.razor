@@ -1,4 +1,6 @@
-﻿@page "/quiz"
+﻿
+
+@page "/quiz"
 @inject QuizService QuizService
 
 @code {
@@ -7,6 +9,9 @@
     private int currentQuestionIndex = 0;
     private int? selectedAnswerIndex = null;
     private List<int> scores = new List<int>();
+    private int totalScore = 0;
+    private int categoryScore = 0;
+    private bool showCategoryScore = false;
 
     protected override async Task OnInitializedAsync()
     {
@@ -28,34 +33,60 @@
         }
     }
 
-    private void SelectAnswer(int index, int points)
+    private async Task SelectAnswer(int index, int points)
     {
         selectedAnswerIndex = index;
         int globalQuestionIndex = GetGlobalQuestionIndex(currentCategoryIndex, currentQuestionIndex);
         scores[globalQuestionIndex] = points;
+
+        // Update total score
+        UpdateTotalScore();
+        await QuizService.SaveResponsesAsync(scores);
+    }
+
+    private void UpdateTotalScore()
+    {
+        totalScore = scores.Sum();
+    }
+
+    private void UpdateCategoryScore()
+    {
+        int start = GetGlobalQuestionIndex(currentCategoryIndex, 0);
+        int end = start + categories[currentCategoryIndex].Questions.Count;
+        categoryScore = scores.Skip(start).Take(end - start).Sum();
     }
 
     private async Task NextQuestion()
     {
         if (selectedAnswerIndex.HasValue)
         {
-            selectedAnswerIndex = null;
+            selectedAnswerIndex = null; // Reset the selected answer for the next question
 
             if (currentQuestionIndex < categories[currentCategoryIndex].Questions.Count - 1)
             {
                 currentQuestionIndex++;
             }
-            else if (currentCategoryIndex < categories.Count - 1)
-            {
-                currentCategoryIndex++;
-                currentQuestionIndex = 0;
-            }
             else
             {
-                // Handle end of quiz if needed
-                return;
+                // End of current category
+                UpdateCategoryScore();
+                showCategoryScore = true;
+
+                await QuizService.SaveResponsesAsync(scores);
+
+                if (currentCategoryIndex < categories.Count - 1)
+                {
+                    currentCategoryIndex++;
+                    currentQuestionIndex = 0;
+                }
+                else
+                {
+                    // Handle end of quiz if needed
+                    return;
+                }
             }
 
+            UpdateTotalScore(); // Update total score after moving to next question
             await QuizService.SaveResponsesAsync(scores);
         }
     }
@@ -73,6 +104,12 @@
         }
     }
 
+    private bool IsQuizCompleted()
+    {
+        return currentCategoryIndex == categories.Count - 1 &&
+               currentQuestionIndex == categories.Last().Questions.Count - 1;
+    }
+
     private int GetGlobalQuestionIndex(int categoryIndex, int questionIndex)
     {
         int globalIndex = 0;
@@ -83,75 +120,56 @@
         return globalIndex + questionIndex;
     }
 }
-
 <div class="container">
     <div class="quiz-container">
         @if (categories != null)
         {
-            <h3>@categories[currentCategoryIndex].CategoryName</h3>
-            <p>@categories[currentCategoryIndex].Questions[currentQuestionIndex].QuestionText</p>
+            @if (showCategoryScore)
+            {
+                <div class="category-score">
+                    <h4>Category Score: @categoryScore</h4>
+                    <button @onclick="() => showCategoryScore = false">Next Category</button>
+                </div>
+            }
+            else
+            {
+                <h2 class="head">Test Application</h2>
+                
+                <h3 class="name">@categories[currentCategoryIndex].CategoryName</h3>
 
-            <ul class="answers-list">
-                @for (int i = 0; i < categories[currentCategoryIndex].Questions[currentQuestionIndex].Answers.Count; i++)
-                {
-                    var answer = categories[currentCategoryIndex].Questions[currentQuestionIndex].Answers[i];
-                    <li>
-                        <input type="radio" id="@($"answer-{i}")" name="answers" @onclick="() => SelectAnswer(i, answer.Points)" checked="@(selectedAnswerIndex == i)" />
-                        <label for="@($"answer-{i}")">@answer.Text</label>
-                    </li>
-                }
-            </ul>
+                <hr />
+                <p class="para">Question @categories[currentCategoryIndex].Questions[currentQuestionIndex].QuestionNumber</p>
+                <p>@categories[currentCategoryIndex].Questions[currentQuestionIndex].QuestionText</p>
 
-            <div class="navigation-buttons">
-                <button @onclick="PreviousQuestion" disabled="@(currentCategoryIndex == 0 && currentQuestionIndex == 0)">Previous</button>
-                <button @onclick="NextQuestion">Next</button>
-            </div>
+                <ul class="answers-list">
+                    @for (int i = 0; i < categories[currentCategoryIndex].Questions[currentQuestionIndex].Answers.Count; i++)
+                    {
+                        var answer = categories[currentCategoryIndex].Questions[currentQuestionIndex].Answers[i];
+                        <li>
+                            <input type="radio" id="@($"answer-{i}")" name="answers" @onclick="async () => await SelectAnswer(i, answer.Points)"  checked="@(selectedAnswerIndex == i)" />
+                            <label for="@($"answer-{i}")">@answer.Text</label>
+                        </li>
+                    }
+                </ul>
+
+                <div class="navigation-buttons">
+                    <button class="btn btn-success" @onclick="PreviousQuestion"
+                            disabled="@(currentCategoryIndex == 0 && currentQuestionIndex == 0)">
+                        Previous
+                    </button>
+                    <button class="btn btn-primary" @onclick="NextQuestion"
+                            disabled="@(IsQuizCompleted())">
+                        Next
+                    </button>
+                </div>
+            }
+
+            @if (IsQuizCompleted())
+            {
+                <div class="total-score">
+                    <h4>Total Score: @totalScore</h4>
+                </div>
+            }
         }
     </div>
 </div>
-
-<style>
-    .answers-list {
-        list-style-type: none;
-        padding: 0;
-    }
-
-        .answers-list li {
-            margin: 10px 0;
-        }
-
-    input[type="radio"] {
-        display: none;
-    }
-
-        input[type="radio"] + label {
-            position: relative;
-            padding-left: 25px;
-            cursor: pointer;
-            user-select: none;
-        }
-
-            input[type="radio"] + label:before {
-                content: "";
-                position: absolute;
-                left: 0;
-                top: 0;
-                width: 18px;
-                height: 18px;
-                border: 2px solid #000;
-                border-radius: 50%;
-                background: #fff;
-            }
-
-        input[type="radio"]:checked + label:after {
-            content: "";
-            position: absolute;
-            left:1px;
-             top: 5px; 
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            border: 2px solid black;
-            /* background: yellow; */
-        }
-</style>
